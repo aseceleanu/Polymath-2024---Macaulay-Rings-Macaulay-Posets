@@ -1,0 +1,139 @@
+\documentclass[11pt]{amsart}
+\usepackage[margin=1.2in]{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\usepackage[colorlinks=true, pdfstartview=FitV, linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
+ \usepackage{tikz}
+\usepackage[listings]{tcolorbox}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{mathrsfs}
+\usepackage{enumitem}
+\usepackage{verbatim}
+\usepackage{animate}
+\usepackage[smalltableaux]{ytableau}
+\usepackage[nameinlink]{cleveref}
+%\usepackage[symbol]{footmisc}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+\newcommand\userinput[1]{{\bf #1}}
+
+\crefname{defn}{definition}{definitions}
+\Crefname{def}{Definition}{Definitions}
+\crefname{thm}{theorem}{theorems}
+\Crefname{thm}{Theorem}{Theorems}
+
+%=========== colors ====
+\usepackage{color}
+\newcommand{\cc}{\color{cyan}}
+\newcommand{\cb}{\color{blue}}
+\newcommand{\cm}{\color{magenta}}
+
+%=========== fraktur letters ====
+
+\newcommand{\m}{{\mathfrak M}}
+\newcommand{\fp}{{\mathfrak p}}
+
+%========== bold letters =========
+
+\newcommand{\C}{{\mathbb C}}
+\newcommand{\F}{{\mathbb F}}
+\newcommand{\N}{{\mathbb N}}
+\newcommand{\R}{{\mathbb R}}
+\newcommand{\Q}{{\mathbb Q}}
+\newcommand{\Z}{{\mathbb Z}}
+
+\newcommand{\ba}{{\mathbf a}}
+\newcommand{\bb}{{\mathbf b}}
+\newcommand{\bc}{{\mathbf c}}
+\newcommand{\be}{{\mathbf e}}
+\newcommand{\bp}{{\mathbf p}}
+\newcommand{\bx}{{\mathbf x}}
+\newcommand{\bv}{{\mathbf v}}
+
+%========== mathcal letters =========
+
+\newcommand{\M}{{\mathcal M}}
+\renewcommand{\O}{{\mathcal O}}
+\renewcommand{\P}{{\mathcal P}}
+\newcommand{\A}{{\mathcal A}}
+\newcommand{\cH}{{\mathcal H}}
+\newcommand{\B}{{\mathcal B}}
+\newcommand{\K}{{\mathcal K}}
+\newcommand{\T}{{\mathcal T}}
+\newcommand{\Pf}{\rm{Pfaff}}
+\newcommand{\cP}{{\mathcal P}}
+\newcommand{\cS}{{\mathcal S}}
+\newcommand{\cF}{{\mathcal F}}
+
+%=========== operators ==============
+
+
+\def\im{\operatorname{im}}
+\def\lcm{\operatorname{lcm}}
+\def\lex{\operatorname{lex}}
+\newcommand{\dSdw}{\Delta}
+\newcommand{\uSdw}{\rotatebox[origin=c]{180}{$\Delta$}}
+\newcommand{\di}{\diamond}
+
+
+
+%========= theorems =============
+
+\theoremstyle{plain} %% This is the default, anyway
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{thmdef}[thm]{TheoremDefinition}
+\newtheorem{introthm}{Theorem}
+\newtheorem{introcor}[introthm]{Corollary}
+\newtheorem*{introthm*}{Theorem}
+\newtheorem{question}{Question}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{probl}[thm]{Problem}
+\newtheorem{oprobl}{Open Problem}
+\newtheorem*{oprobl*}{Open Problem}
+
+
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem{quest}[thm]{Question}
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{chunk}[thm]{}
+\newtheorem{ex}[thm]{Example}
+\newtheorem{exer}[thm]{Exercise}
+\newtheorem{alg}[thm]{Algorithm}
+
+\theoremstyle{remark}
+\newtheorem{rem}[equation]{Remark}
+\newtheorem{notation}[thm]{Notation}
+\newtheorem{terminology}[equation]{Terminology}
+
+\numberwithin{equation}{section}  %% equation numbering
+
+
+\title{Macaulay Rings \& Macaulay Posets}
+\author{Polymath 2024}
+\date{June 2024}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\section{Solutions to exercises}
+
+
+
+\section{Open problem 1}
+
+\section{Open problem 2}
+
+\section{Open problem 3}
+
+\section{Open problem 4}
+\end{document}

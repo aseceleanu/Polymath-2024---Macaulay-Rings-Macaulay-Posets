@@ -1,0 +1,28 @@
+\documentclass[tikz, border=0.15mm]{standalone}
+\usepackage{ytableau,tikz,varwidth}
+\usetikzlibrary{calc}
+\usepackage{mathrsfs}
+\input{colors2D.tex}
+
+\begin{document}
+\begin{tikzpicture}[inner sep=0in,outer sep=0in]
+	draw \node[circle, draw = black, ultra thick, minimum size=15pt, fill] at (2,0) (1) {A};
+	draw \node[circle, draw = black, ultra thick, minimum size=15pt, fill] at (0,-4) (x_1) {};
+	draw \node[circle, draw = black, ultra thick, minimum size=15pt, fill] at (4,-4) (x_2) {};
+	
+	draw \node[circle, draw = black, ultra thick, minimum size=15pt, fill] at (0,-8) (x_1^2) {};
+	draw \node[circle, draw = black, ultra thick, minimum size=15pt, fill] at (4,-8) (x_2^2) {};
+	
+	draw \node[circle, draw = black, ultra thick, minimum size=15pt, fill] at (0,-12) (x_1^3) {};
+	draw \node[circle, draw = black, ultra thick, minimum size=15pt, fill] at (4,-12) (x_2^3) {};
+	
+	\draw[black,ultra thick] (1)--(x_1);
+	\draw[black,ultra thick] (1)--(x_2);
+	
+	\draw[black,ultra thick] (x_1)--(x_1^2);
+	\draw[black,ultra thick] (x_2)--(x_2^2);
+	
+	\draw[black,ultra thick] (x_1^2)--(x_1^3);
+	\draw[black,ultra thick] (x_2^2)--(x_2^3);
+\end{tikzpicture}
+\end{document}

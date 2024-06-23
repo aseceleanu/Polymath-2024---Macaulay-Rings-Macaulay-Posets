@@ -1,0 +1,28 @@
+\documentclass[pstricks]{standalone}
+\usepackage{pstricks}
+\usepackage{pst-solides3d}
+\usepackage{pst-3dplot}
+\usepackage{mathrsfs}
+\input{colors3D.tex}
+\begin{document}
+	\begin{pspicture}(-1.36,-1.05)(1.63,1.95)
+		\input{settings3D.tex}
+		
+		
+		%\axesIIID[labelsep=10pt, axisnames={mathscr{T}_1, mathscr{T}_2, mathscr{T}_3}](0,0,0)(7,7,7)
+	
+		\psSolid[object=grille,RotX=-90,base=0 2 -2 0,action=draw**,linecolor=black,fillcolor=\typeB]
+		\psSolid[object=grille,RotY=90,base=-2 0 0 2,action=draw**,linecolor=black,fillcolor=\typeB]
+		\psSolid[object=grille,base=0 2 0 2,action=draw**,linecolor=black,fillcolor=\typeB]
+		
+		
+		\psSolid[object=cube,a=1,action=draw**,fillcolor=\typeA](0.5,0.5,0.5)
+		\psSolid[object=cube,a=1,action=draw**,fillcolor=\typeA](0.5,0.5,1.5)
+		\psSolid[object=cube,a=1,action=draw**,fillcolor=\typeA](0.5,1.5,0.5)
+		\psSolid[object=cube,a=1,action=draw**,fillcolor=\typeA](0.5,1.5,1.5)
+		\psSolid[object=cube,a=1,action=draw**,fillcolor=\typeA](1.5,0.5,0.5)
+		\psSolid[object=cube,a=1,action=draw**,fillcolor=\typeA](1.5,0.5,1.5)
+		\psSolid[object=cube,a=1,action=draw**,fillcolor=\typeA](1.5,1.5,0.5)
+		\psSolid[object=cube,a=1,action=draw**,fillcolor=\typeA](1.5,1.5,1.5)
+	\end{pspicture}
+\end{document}
